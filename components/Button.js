@@ -29,7 +29,7 @@ export default function Button({ label, theme, onPress }) {
   }
 
   return (
-    <View style={styles.buttonContainer}>
+    <View style={styles.buttonContainerSecond}>
       <Pressable style={styles.button} onPress={onPress}>
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
@@ -41,6 +41,15 @@ const styles = StyleSheet.create({
   buttonContainer: {
     width: 320,
     height: 68,
+    marginHorizontal: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 3,
+    marginBottom: 8,
+  },
+  buttonContainerSecond: {
+    width: 320,
+    height: 50,
     marginHorizontal: 20,
     alignItems: "center",
     justifyContent: "center",
